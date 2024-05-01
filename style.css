@@ -78,6 +78,17 @@ li a:hover {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 #introduction {
   display: flex;
   flex-direction: column;
@@ -181,6 +192,7 @@ li a:hover {
   width: 300px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin: 1rem;
   padding: 30px;
@@ -199,11 +211,6 @@ li a:hover {
   border-radius: 10px 10px 0 0;
 }
 
-.project-details {
-  padding: 20px;
-  text-align: center;
-}
-
 a {
   text-decoration: none; 
 }
@@ -212,10 +219,49 @@ a:hover {
   color: #332211; 
 }
 
-.intro-text {
-  font-size: 1.7rem;
-  color: #332211;
-  margin-bottom: 1rem;
+#project-pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 20px; 
+  max-width: 40vw;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#project-body {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  animation: fadeIn 1s ease forwards;
+}
+
+.project-header {
+  margin-top: 0;
+  text-align: center;
+  font-size: 3rem;
+  color: #2d3142;
+  margin-bottom: 2rem;
+}
+
+.project-details {
+  padding: 20px;
+  text-align: center;
+}
+
+.project-sidebar {
+  width: 300px;
+  padding: 1rem;
+  border-right: 3px solid #332211;
+  text-align: center;
+  
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .tag-text {
@@ -224,22 +270,29 @@ a:hover {
   margin-bottom: 0.5rem;
 }
 
-#project-pic {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  border-radius: 20px; 
-  max-width: 40vw;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+.tag-box {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  color: #332211;
+  border: 1px solid #d33967;
+  border-radius: 10px;
+  padding: 0.5rem;
+  text-align: center;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.project-body-text {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #2d3142;
+  max-width: 70vw;
 }
+
+.project-body-text h3 {
+  margin-top: 0;
+  color: #d33967;
+  font-size: 2rem;
+
+}
+
