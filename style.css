@@ -198,7 +198,7 @@ li a:hover {
   padding: 30px;
   border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  background-color: #ffebeb;
+  background-color: #ffefef;
   transition: transform 0.3s ease;
 }
 
@@ -293,6 +293,5 @@ a:hover {
   margin-top: 0;
   color: #d33967;
   font-size: 2rem;
-
 }
 
