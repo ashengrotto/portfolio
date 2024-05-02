@@ -286,7 +286,7 @@ a:hover {
   flex-direction: column;
   justify-content: space-around;
   border-radius: 20px; 
-  max-width: 25vw;
+  max-width: 20vw;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   margin: 1rem;
 }
@@ -433,4 +433,16 @@ a:hover {
 .hifi-pics {
   display: flex;
   flex-direction: column;
+}
+
+.style-guide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.style-desc {
+  max-width: 30vw;
+  color: #26180b;
 }
