@@ -9,7 +9,7 @@ body {
   height: 100vh;
   overflow-x: hidden;
   font-family: 'Playfair Display', serif;
-  background-color: #fffaf0 !important;
+  background-color: #fffcf7 !important;
 }
 
 #main {
@@ -31,7 +31,7 @@ body {
 
 .website-title {
   font-size: 2rem;
-  color: #332211;
+  color: #26180b;
   margin-left: 2rem;
 }
 
@@ -47,13 +47,13 @@ li a {
   font-size: 1.75vmax;
   color: #d33967;
   text-align: center;
-  padding: 2vmin;
+  padding: 2rem;
   text-decoration: none;
   font-weight: bold;
 }
 
 li a:hover {
-  color: #332211;
+  color: #26180b;
   text-decoration: underline;
 }
   
@@ -121,7 +121,7 @@ li a:hover {
   display: flex;
   text-align: center;
   font-size: 3vmax;
-  color: #332211;
+  color: #26180b;
   white-space: nowrap;
   align-self: center;
   flex-shrink: 0;
@@ -134,7 +134,7 @@ li a:hover {
   align-self: center;
   font-size: 1.4vmax;
   font-weight: 300;
-  color: #332211;
+  color: #26180b;
   flex-direction: column;
 }
 
@@ -213,10 +213,12 @@ li a:hover {
 
 a {
   text-decoration: none; 
+  font-size: 1.5rem;
+  color: #d33967;
 }
 
 a:hover {
-  color: #332211; 
+  color: #26180b; 
 }
 
 #project-pic {
@@ -226,6 +228,80 @@ a:hover {
   border-radius: 20px; 
   max-width: 40vw;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin: 1rem;
+}
+
+#project-pic-large {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 20px; 
+  max-width: 55vw;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin: 1rem;
+}
+
+#project-pic-small {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 20px; 
+  max-width: 25vw;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin: 1rem;
+}
+
+#original-project-pic-0 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: center;
+  border-radius: 20px; 
+  max-height: 60vh;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin: 1rem;
+}
+
+#original-project-pic-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: center;
+  border-radius: 20px; 
+  max-height: 65vh;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin: 1rem;
+}
+
+#original-project-pic-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 20px; 
+  max-width: 30vw;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin: 1rem;
+}
+
+#original-project-pic-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  border-radius: 20px; 
+  max-height: 100vh;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin: 1rem;
+}
+
+.original-pics {
+  display: flex;
+  flex-direction: row;
+}
+
+.original-desktop {
+  display: flex;
+  flex-direction: row;
 }
 
 #project-body {
@@ -253,9 +329,8 @@ a:hover {
 .project-sidebar {
   width: 300px;
   padding: 1rem;
-  border-right: 3px solid #332211;
+  border-right: 3px solid #ffdde4;
   text-align: center;
-  
 }
 
 .tags {
@@ -266,14 +341,14 @@ a:hover {
 
 .tag-text {
   font-size: 1.2rem;
-  color: #332211;
+  color: #26180b;
   margin-bottom: 0.5rem;
 }
 
 .tag-box {
   margin: 0.5rem;
   font-size: 1.5rem;
-  color: #332211;
+  color: #26180b;
   border: 1px solid #d33967;
   border-radius: 10px;
   padding: 0.5rem;
@@ -289,9 +364,33 @@ a:hover {
   max-width: 70vw;
 }
 
+.project-body-text h2 {
+  margin: 0.5rem;
+  color: #f8779e;
+  font-size: 1.4rem;
+}
+
 .project-body-text h3 {
-  margin-top: 0;
+  margin: 0;
   color: #d33967;
   font-size: 2rem;
 }
 
+.project-body-text p {
+  color: #26180b;
+  font-size: 1.5rem;
+}
+
+.project-body-text ul {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  list-style-type: circle;
+  margin: 0;
+}
+
+.hifi-pics {
+  display: flex;
+  flex-direction: column;
+}
