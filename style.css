@@ -162,6 +162,22 @@ li a:hover {
   flex-direction: column;
 }
 
+#logo {
+  display: flex;
+  border-radius: 20px; 
+  max-width: 3vw;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+#contact-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #about-me {
   display: flex;
   flex-direction: column;
