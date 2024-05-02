@@ -89,7 +89,6 @@ li a:hover {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .rounded-box {
@@ -395,6 +394,14 @@ a:hover {
   border-radius: 10px;
   padding: 0.5rem;
   text-align: center;
+}
+
+#project-body {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 
 .project-body-text {
