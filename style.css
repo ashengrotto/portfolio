@@ -53,11 +53,9 @@ body {
 
 .lower-bar {
   width: 100vw;
-  height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1rem;
   background: linear-gradient(to right, #ffedf3, #ffe1ea);
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -71,7 +69,7 @@ body {
 
 .lower-bar li a {
   display: block;
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: #d33967;
   text-align: center;
   padding: 2rem;
@@ -147,7 +145,7 @@ li a:hover {
 .welcome-msg {
   display: flex;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #26180b;
   white-space: nowrap;
   align-self: center;
@@ -156,10 +154,10 @@ li a:hover {
   
 .intro-text {
   display: flex;
-  max-width: 40vw;
+  max-width: 50vw;
   text-align: center;
   align-self: center;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: #26180b;
   flex-direction: column;
 }
