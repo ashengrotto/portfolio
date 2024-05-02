@@ -29,7 +29,7 @@ body {
 }
 
 .website-title {
-  font-size: 2vmax;
+  font-size: 2rem;
   color: #26180b;
   margin-left: 5rem;
 }
@@ -43,7 +43,7 @@ body {
 
 .nav-bar li a {
   display: block;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #d33967;
   text-align: center;
   padding: 2rem;
@@ -147,7 +147,7 @@ li a:hover {
 .welcome-msg {
   display: flex;
   text-align: center;
-  font-size: 3vmax;
+  font-size: 4rem;
   color: #26180b;
   white-space: nowrap;
   align-self: center;
@@ -159,7 +159,7 @@ li a:hover {
   max-width: 40vw;
   text-align: center;
   align-self: center;
-  font-size: 1.5vmax;
+  font-size: 1.7rem;
   color: #26180b;
   flex-direction: column;
 }
