@@ -9,7 +9,7 @@ body {
   height: 100vh;
   overflow-x: hidden;
   font-family: 'Playfair Display', serif;
-  background-color: #fffcf7 !important;
+  background-color: #fffffe !important;
 }
 
 #main {
@@ -25,26 +25,53 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 1rem;
-  background: linear-gradient(to right, #ffedf3, #f6c8d6);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: #fffffe;
 }
 
 .website-title {
   font-size: 2rem;
   color: #26180b;
-  margin-left: 2rem;
+  margin-left: 5rem;
 }
 
-ul {
+.nav-bar ul {
   list-style-type: none;
   overflow: hidden;
   display: flex;
   justify-content: space-evenly;
 }
 
-li a {
+.nav-bar li a {
   display: block;
-  font-size: 1.75vmax;
+  font-size: 2.5rem;
+  color: #d33967;
+  text-align: center;
+  padding: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.lower-bar {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  background: linear-gradient(to right, #ffedf3, #ffe1ea);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.lower-bar ul {
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.lower-bar li a {
+  display: block;
+  font-size: 2rem;
   color: #d33967;
   text-align: center;
   padding: 2rem;
@@ -64,7 +91,7 @@ li a:hover {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .rounded-box {
@@ -120,7 +147,7 @@ li a:hover {
 .welcome-msg {
   display: flex;
   text-align: center;
-  font-size: 3vmax;
+  font-size: 4rem;
   color: #26180b;
   white-space: nowrap;
   align-self: center;
@@ -129,11 +156,10 @@ li a:hover {
   
 .intro-text {
   display: flex;
-  max-width: 40vw;
+  max-width: 30vw;
   text-align: center;
   align-self: center;
-  font-size: 1.4vmax;
-  font-weight: 300;
+  font-size: 1.7rem;
   color: #26180b;
   flex-direction: column;
 }
@@ -198,7 +224,7 @@ li a:hover {
   padding: 30px;
   border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  background-color: #ffefef;
+  background-color: #ffedf3;
   transition: transform 0.3s ease;
 }
 
