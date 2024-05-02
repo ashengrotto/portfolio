@@ -211,8 +211,10 @@ li a:hover {
 }
   
 .scroll-container {
-  max-width: 100vw;
-  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  max-width: 70vw;
 }
 
 .project-msg {
