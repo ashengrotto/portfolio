@@ -28,6 +28,7 @@
         <h2 lang="en" class="project-header">⟡ Full-Stack Spotify Companion Site</h2>
         <div class="tags">
           <p lang="en" class="tag-box">React</p>
+          <p lang="en" class="tag-box">Spark Java</p>
           <p lang="en" class="tag-box">API Integration</p>
           <p lang="en" class="tag-box">Team</p>
           <p lang="en" class="tag-box">3 weeks</p>
@@ -37,21 +38,27 @@
         <h3>Brief</h3>
         <p lang="en">In this project, we worked as a team to create create a web application that allows users to track their Spotify data, including information such as their most commonly played artists, genres, songs, etc., as well as view the data of friends in a way that is akin to a social media site. The site also includes a recommender system: based on your listening data and the data of the people you follow, you will be recommended playlists and songs.</p>
         <h3>Problem Overview</h3>
-          <p lang="en">We conducted a series of user interviews with Spotify users and recorded the following information:
+
+        <img id="project-pic-large" src="./assets/spotify-current.png" alt="User profiles on Spotify (self and a friend's)"/>
+          <p lang="en">Spotify's existing design does not faciliate the sharing of your own top tracks and artists. Keeping this in mind, we conducted a series of user interviews with Spotify users and recorded the following information:
             <br><br>Existing Pain Points:
             <ul>
                 <li>Your friend's listening habits on Spotify are not visible to you - in order to get data about how your friends are using the app, you usually have to wait until they share their yearly Spotify Wrapped.
                 </li>
-                <li>Especially as a result of the pandemic, university life can be an isolating experience for many, and connecting with new people based on music taste is an appealing concept.
+                <li>Especially as a result of the pandemic, university life can be an isolating experience for many, and connecting with new people based on music taste is an appealing concept for the users we spoke with.
                 </li>
             </ul>
             <br>
             We also conducted a competitor analysis on existing third party applications such as Stats for Spotify and Chosic, which offer the user information about their Spotify usage. 
             The project we propose is different from these existing applications because it involves the aspect of social media, in which friends can view each other’s data on a site. In that way, we felt our design would 
-            succeed better than existing approaches by introducing more of a community to music data, whereas other applications are localized and do not allow for the sharing of information within the site itself.</p>
-        <h3>Intended Audience and Stakeholders</h3>
-        <p lang="en">To avoid pushing the limits of our small group, we planned to provide our application only in English at this time; this may limit the userbase of the app because Spotify is a worldwide application. In a similar way, the recommendation system we plan on implementing may also be limited in its global reach as it will be entirely in English. 
-          Even so, we felt that a great number of Spotify users would be able to use our application, which has the main purposes of allowing users to gain a deeper understanding of their own listening habits through making their statistics viewable whenever they so desire, allowing users to view the data of their friends, and allowing users to connect with friends through music through new song and artist recommendations.
+            succeed better than existing approaches by introducing more of a community to music data, whereas other applications are localized and do not allow for the sharing of information within the site itself.
+           <br><br>
+            From this analysis, we refined the goal of our project: to create a website that addresses the lack of community in Spotify's current design. We hope to build an application that allows users to share their top tracks and artists with their friends, view their friends' listening data, and 
+            synthesize new playlists by introducing new recommendations based on your friends' data.
+          </p>
+            <h3>Intended Audience and Stakeholders</h3>
+        <p lang="en">To avoid pushing the limits of our small group, we planned to provide our application only in English at this time; this may limit our user base because Spotify is a worldwide application.
+          Even so, we felt that a great number of Spotify users would be able to use our application.
           <br><br>
           From here, we outlined a few anticipated external stakeholder groups.
           <ul>
@@ -60,8 +67,8 @@
             <li>Because our web application in its current stage will only support Spotify users, non-Spotify users may feel excluded from this platform.</li>
         </ul>
         </p>
-        <h2>⟡ Part I: Scope and User Stories</h2>
-        <p lang="en">We defined the following user stories:
+        <h3>Scope and User Stories</h3>
+        <p lang="en">We proceeded to focus on the features we wanted to implement, so we defined the following user stories:
           <ul>
             <li>A user can create a personal profile by linking their Spotify account.</li>
             <li>A user can see their Spotify listening data, including information such as most listened to songs, artists, genres, etc. </li>
@@ -72,36 +79,31 @@
         </ul>
         </p>
         <h3>Assumptions and Dependencies</h3>
-        <p lang="en">Our project relies on utilizing the Spotify API for tracking listening data, as well as:
-          <br><br>
-          Technical Dependencies:<ul>
-            <li>Spotify API</li>
+        <p lang="en">From here, we could get into the weeds of how to achieve this vision. The crux of our project relies on utilizing the Spotify API for tracking a user's listening data, as well as the following technical dependencies:<ul>
             <li>Java 17</li>
             <li>Spark Java Framework</li>
             <li>React</li>
-            <li>Github</li>
             <li>Typescript</li>
-            <li>Firebase to handle authentication</li>
+            <li>Firebase to handle authentication (secure login)</li>
           </ul>
           <br>
-          Assumptions:
+          We also wanted to be clear about the assumptions we were making in planning and implementing our design. They were as follows:
           <br><br>
           <ul>
-            <li>Assumption of no copyright conflicts.</li>
-            <li>No legal issues with the data we are storing for users.</li>
-            <li>People are interested in a music-based social media platform.</li>
-            <li>Social media can improve people’s lives.</li>
-            <li>Typescript</li>
-            <li>Firebase to handle authentication</li>
+            <li>Assumption of no copyright conflicts</li>
+            <li>No legal issues with the data we are storing for users</li>
+            <li>People are interested in a music-based social media platform</li>
+            <li>Social media can improve people’s lives</li>
           </ul>
         </p>
-        
         <h3>System Features and Requirements</h3>
-        <p lang="en">Backend:<ul>
+        <p lang="en">The specific features and pages we wanted to implement were as follows:
+          <br><br>
+          Backend:<ul>
             <li>Database: Stores pertinent user information in a SQL database, which will be used to do logins, searches, and recommendations.</li>
             <li>Spotify API: Interfaces with Spotify in order to pull relevant data regarding listening habits of users.</li>
             <li>Recommendation System: Allows for users to get recommendations of other users with similar listening habits.</li>
-            <li> Authentication System: Allows for users to create an account for the application that will be used for subsequent logins. Also allows for users to link their accounts to Spotify for data scraping purposes.</li>
+            <li>Authentication System: Allows for users to create an account for the application that will be used for subsequent logins. Also allows for users to link their accounts to Spotify for data scraping purposes.</li>
           </ul>
           <br>Frontend:
           <br><br>
@@ -119,9 +121,10 @@
             <li>UI: We want to have a clean and non-distracting UI, so we will focus on effective and practical design over highly flashy and attractive looks.</li>
           </ul>
         </p>
-
         <h3>Final Implementation</h3>
-        <p lang="en">In the end, we were able to build and deploy our site, complete with a recommendation algorithm, integration with Spotify data, and friend list system. The code is currently set to private as it was a class project, but feel free to reach out if you would like to see the repository!
+        <p lang="en">Keeping this all in mind, we began coding our site. Within the team, I mainly handled design of the UI and integrating the front-end and back-end. 
+
+          <br><br>In the end, we were able to build and deploy our site, complete with a recommendation algorithm, integration with Spotify's API to extract user data, and friends list system. The code is currently set to private as it was a class project, but feel free to reach out if you would like to see the repository!
       </p>
     </div>
     </div>
