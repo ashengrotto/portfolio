@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="theme-color" content="#e8e8ff" />
+  <title>Viviana's Portfolio</title>
+  <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+  <link rel="stylesheet" href="./style.css"/>
+</head>
+
+<body>
+  <div id="main">
+    <a id="top"></a>
+    <nav class="nav-bar">
+      <h1 class="website-title"></h1>
+      <ul>
+        <li lang="en"><a href="./index.html">Home ⟡</a></li>
+        <li lang="en"><a href="./about.html">About ⟡</a></li>
+        <li lang="en"><a href="./projects.html">Projects ⟡</a></li>
+        <li lang="en"><a href="https://drive.google.com/file/d/1a4arY76TO2YqPbRpXw6Lp75wzVPSNWM3/view?usp=sharing">Resume ⟡</a></li>
+      </ul>
+    </nav>
+
+    <div id="project-body">
+      <div class="project-sidebar">
+        <h2 lang="en" class="project-header">⟡ Full-Stack Spotify Companion Site</h2>
+        <div class="tags">
+          <p lang="en" class="tag-box">React</p>
+          <p lang="en" class="tag-box">API Integration</p>
+          <p lang="en" class="tag-box">Team</p>
+          <p lang="en" class="tag-box">3 weeks</p>
+        </div>
+      </div>
+      <div class="project-body-text">
+        <h3>Brief</h3>
+        <p lang="en">In this project, we worked as a team to create create a web application that allows users to track their Spotify data, including information such as their most commonly played artists, genres, songs, etc., as well as view the data of friends in a way that is akin to a social media site. The site also includes a recommender system: based on your listening data and the data of the people you follow, you will be recommended playlists and songs.</p>
+        <h3>Problem Overview</h3>
+          <p lang="en">We conducted a series of user interviews with Spotify users and recorded the following information:
+          
+            <br><br>Existing Customer Pain Points:
+            <ul>
+                <li>Your friend's listening habits on Spotify are not visible to you - in order to get data about how your friends are using the app, you usually have to wait until they share their yearly Spotify Wrapped.
+                </li>
+                <li>Especially as a result of the pandemic, university life can be an isolating experience for many, and connecting with new people based on music taste is an appealing concept.
+                </li>
+            </ul>
+            <br>
+            We also conducted a competitor analysis on existing third party applications such as Stats for Spotify and Chosic, which offer the user information about their Spotify usage. 
+            The project we propose is different from these existing applications because it involves the aspect of social media, in which friends can view each other’s data on a site. In that way, we felt our design would 
+            succeed better than existing approaches by introducing more of a community to music data, whereas other applications are localized and do not allow for the sharing of information within the site itself.</p>
+        <h2>⟡ Part I: Intended Audience and Stakeholder</h2>
+        <p lang="en">Though it may seem broad, we aim to make our app accessible to all users of Spotify. That being said, to avoid pushing the limits of the project (and the scope of our small group), we only plan to implement our application in English at this time; this may limit the user base of the app because Spotify is a worldwide application. In a similar way, the recommender system we plan on implementing may also be limited in its global reach as it will be entirely in English. 
+          Even so, we feel that a great number of Spotify users will be able to use our application, which has the main purposes of allowing users to gain a deeper understanding of their own listening habits through making their statistics viewable whenever they so desire, allowing users to view the data of their friends, and allowing users to connect with friends through music through new song and artist recommendations.
+
+          <br><br>
+          Below we outline a few anticipated external stakeholder groups.
+          <ul>
+            <li>Because our application would compete with other existing social media platforms, other platforms like Instagram and Tiktok may have a negative reaction to our application.</li>
+            <li>Each year, Spotify releases a “Spotify Wrapped” which aggregates and displays data on a user’s listening habits throughout the year. Our application would allow users to see some of this data without waiting for the “Spotify Wrapped” to be released by Spotify. As a result, Spotify, or other streaming services which provide similar annual releases for users to view their data, may view our application in a negative light.</li>
+            <li>Because our web application in its current stage will only support Spotify users, non-Spotify users may feel excluded from this platform.</li>
+        </ul>
+        </p>
+        <h2>⟡ Part II: Scope and User Stories</h2>
+        <p lang="en">We are currently not planning on implementing multiple language options for the site; we are also not planning on allowing for data to be tracked from other music apps such as Apple Music and YouTube Music. However, this may become possible in the future depending on the popularity of the app and the desire of team members to expand the project.
+          
+          <br><br>We defined the following user stories:
+          <ul>
+            <li>A user can create a personal profile by linking their Spotify account.</li>
+            <li>A user can see their Spotify listening data, including information such as most listened to songs, artists, genres, etc. </li>
+            <li>A user can add friends by searching for their usernames.</li>
+            <li>A user can see their friend's listening data.</li>
+            <li>A user can be recommended personalized playlists, songs, and artists based on their friends' listening data through a recommendation algorithm.</li>
+            <li>A user can follow said recommended artists or playlists through our app by connecting to their Spotify accounts.            </li>
+        </ul>
+        </p>
+        <h2>⟡ Part III: Assumptions and Dependencies</h2>
+        <p lang="en">Our project relies on utilizing the Spotify API for tracking listening data, as well as:
+
+          <br><br>
+          Technical Dependencies:
+          <ul>
+            <li>Spotify API</li>
+            <li>Java 17</li>
+            <li>Spark Java Framework</li>
+            <li>React</li>
+            <li>Github</li>
+            <li>Typescript</li>
+            <li>Firebase to handle authentication</li>
+          </ul>
+         
+          <br>
+          Assumptions:
+          <ul>
+            <li>Assumption of no copyright conflicts.</li>
+            <li>No legal issues with the data we are storing for users.</li>
+            <li>People are interested in a music-based social media platform.</li>
+            <li>Social media can improve people’s lives.</li>
+            <li>Typescript</li>
+            <li>Firebase to handle authentication</li>
+          </ul>
+
+        </p>
+        <h3>System Features and Requirements</h3>
+        <p lang="en"> Backend:
+          <ul>
+            <li>Database: Stores pertinent user information in a SQL database, which will be used to do logins, searches, and recommendations.</li>
+            <li>Spotify API: Interfaces with Spotify in order to pull relevant data regarding listening habits of users.</li>
+            <li>Recommendation System: Allows for users to get recommendations of other users with similar listening habits.</li>
+            <li> Authentication System: Allows for users to create an account for the application that will be used for subsequent logins. Also allows for users to link their accounts to Spotify for data scraping purposes.</li>
+          </ul>
+          <br>Frontend:
+          <ul>
+            <li>Welcome Page: Serves as the welcome page for users, giving an overview of the purpose and features available in the application.</li>
+            <li>User Profile Page: Gives information about the user themself and allows them to modify their own profile.</li>
+            <li>Friend Search Page: Offers the functionality to search amongst the user’s friends.</li>
+          </ul>
+        </p>
+        <h3>Non-functional Requirements</h3>
+        <p lang="en"> 
+          <ul>
+            <li>Performance: Given the regularity with which people will use our application, the app must have the highest standard of performance, both in speed and reliability.</li>
+            <li>Security: Besides passwords, we are not storing any particularly sensitive information. We may use a third party service for passwords to ensure security, but we will aim for a minimum level of security for other data we are storing.            </li>
+            <li>Privacy: In contrast to other social media apps, our application aims to prioritize the privacy of our users, so we’ll aim for the highest standard of privacy, with particular attention to obfuscating some data from developers so that only users themselves have access to them.</li>
+            <li>UI: We want to have a clean and non-distracting UI, so we will focus on effective and practical design over highly flashy and attractive looks.</li>
+          </ul>
+    
+        </p>
+    </div>
+    </div>
+    <nav class="lower-bar">
+      <h1 class="website-title">Contact Me</h1>
+      <div id="contact-logos">
+        <a href="https://www.linkedin.com/in/viviana-wei-8412721b0/">
+          <img id="logo" src="./assets/linkedin-icon.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/ashengrotto">
+          <img id="logo" src="./assets/github-icon.png" alt="Github">
+        </a>
+        <a href="mailto:vivianaweiwei@gmail.com">
+          <img id="logo" src="./assets/email-icon.png" alt="Email">
+        </a>
+        </div>
+    </nav>
+  </div>
+</body>
+</html>
