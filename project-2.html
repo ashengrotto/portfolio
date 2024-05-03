@@ -37,10 +37,11 @@
         <h3>Brief</h3>
         <p lang="en">In this project, we worked as a team to design for the start-up Partiful. Their product, primarily targeting Gen Z and Millenials, enables users to create event pages and send invites to friends, and their mission is to foster real-world connections through technology.</p>
         <h3>Problem Overview</h3>
-        <h2>⟡ PROBLEM STATEMENT: How might we make it easier for hosts and guests to navigate to their past events?</h2>
-        <p lang="en">Partiful's existing homepage requires the user to scroll to the right horizontally and press a button to view their past events. 
-            
-            Their main goal was for us to redesign their homepage to more prominently feature a user's past events. According to the founders, whom we corresponded with via email and on a shared project brief document, their main metrics were as follows:
+        <div class="style-guide">
+          <img id="project-pic-small" src="./assets/partiful-current.gif" alt="A gif of the original site"/>
+          <p lang="en" class="style-desc">Partiful's existing design requires the user to scroll to the right horizontally and click into a filter to view their past events. The main drawback of this design is that it can be difficult for users to find their past events because they are not easily available on the landing page.</p>
+        </div>
+          <p lang="en">Their main goal was for us to redesign their mobile app homepage to more prominently feature a user's past events. According to the founders, whom we corresponded with via email and on a shared project brief document, their main metrics were as follows:
           
             <br><br>Customer Pain Points:
             <ul>
@@ -56,45 +57,44 @@
             <br>
             Discussing the brief with the founders cleared up a lot of questions we had. In particular, the founder’s assertion that 
             it was very difficult for the average user to navigate to past events as well as the greater goal of improving the app’s 
-            learnability was a great starting point for our design.</p>
+            learnability was a great starting point.</p>
 
         <h3>Visual Redesign</h3>
         <h2>⟡ Part I: Sketching and Brainstorming</h2>
-        <div class="original-pics">
-            <img id="original-project-pic-1" src="./assets/iterative-sketch1.PNG" alt="An image of the original site with specific pain points highlighted"/>
-            <img id="original-project-pic-1" src="./assets/iterative-sketch2.PNG" alt="An image of the original site with specific pain points highlighted"/>
-        </div>        
-        
-        <p lang="en">Above are the two sketches I produced for my team. 
-            <br><br>From these brainstormed ideas, I synthesized a few elements I wanted to include in my final redesign. Namely:
-            <ul>
-                <li>A single, main image on the page that could attract attention</li>
-                <li>Shortening the the introduction text amd moving it to the right of the main image</li>
-                <li>Maintaining the top navigation bar but trimming down the number of links, and adding a bottom bar to hold contact information</li>
-                <li>Using a decorative element to break up the information, either a gallery (desktop) or a quote (tablet/mobile)</li>
-            </ul>
+        <img id="original-project-pic-1" src="./assets/iterative-sketch.png" alt="An image of the original site with specific pain points highlighted"/>
+        <p lang="en">Above is one of the two sketches I produced for my team. My main mindset was building off the existing Partiful framework but adding a new section solely dedicated to past events. 
+          I also utilized a larger card featuring some brief information about each event in hopes of making the design more understandable to the user.
         </p>
-        <h2>⟡ Part II: Wireframing</h2>
-        <p lang="en">I began with making lo-fi wireframes for three screen sizes: for desktop, tablet, and mobile.</p>
-        <img id="project-pic-large" src="./assets/all-lofi.png" alt="An image of my lo-fi prototypes"/>
-        <p lang="en">As you can see, I streamlined the desktop design by removing the automatic music player and condensing the number of links.
-             I planned to do this thoughtfully by combining related pages and using dropdowns to group related information, 
-             and attempted to retain the quality of information presented by the site.
-            
-            <br><br>
-            The mobile and tablet redesigns are more similar in nature, both featuring a dropdown instead of a traditional navigation bar for ease of tapping with fingers (which are less precise than a mouse). </p>
-        <h2>⟡ Part III: Visual style guide</h2>
-        <p lang="en">Then, I created a style guide on Figma to ensure consistency before I start on finalizing the designs. I brainstormed a color scheme, decided on icons I would use for the social media links, and standardized text sizes and fonts for my designs. I also finalized button and link hover behavior.</p>
-        <img id="project-pic-small" src="./assets/redesign-style-guide.jpg" alt="An image of my style guide"/>
-        <h2>⟡ Part IV: High-Fidelity Prototyping</h2>
-        <p lang="en">With these designs, I returned to Figma to create three hi-fi prototypes.</p>
-        <p lang="en">In both the tablet and mobile designs, the navigation bar is a dropdown instead of a series of links. This is to faciliate easier navigation on smaller screen sizes by offering larger buttons for users to press.</p>
-        <h3>Implementation and Takeaways</h3>
-        <p lang="en">As the final step, I implemented my design using HTML and CSS. The link to my final redesigned page is <a href="https://ashengrotto.github.io/responsive-redesign/">here</a>, and the Github repository is <a href="https://github.com/ashengrotto/responsive-redesign">here</a>.
-        <br><br>
-        This was one of the first front-to-back, responsive projects I have ever worked on, and I learned a lot about both design principles and HTML/CSS.
-        Through this experience, I feel much more prepared to tackle real-world problems through design and front-end engineering.
-    </p>
+        <h2>⟡ Part II: Wireframing and Initial Feedback</h2>
+        <p lang="en">As a team, we shared our sketches and decided on a plan to move forward. From here, we created multiple low-fidelity 
+          wireframes, with our main design displayed below.  </p>
+          <div class="style-guide">
+            <img id="original-project-pic-1" src="./assets/iterative-basic-lofi.png" alt="An image of the original site with specific pain points highlighted"/>
+            <p lang="en" class="style-desc">In our design, we hoped to address the main concern of Past Events being difficult for users to access. We also wanted to improve the searchability of events overall through adding a search bar. Finally, because a user is more likely to have more past events than upcoming events, 
+              we decided to implement a vertical scroll for past events and horizontal scroll for upcoming.</p>
+          </div>
+          <p lang="en">After we finalized our first lo-fi wireframe, we got the opportunity to contact the Partiful founders and get their direct feedback on our work. They encouraged us to think outside the box and propose multiple more creative solutions to 
+            displaying Past Events, so we took this to heart and decided to diversify our work by incorporating new ideas. 
+            <br><br>This resulted in the production of two more lo-fis, both of which featured ideas I came up with.
+          </p>
+          <img id="original-project-pic-1" src="./assets/iterative-creative-lofi.png" alt="An image of the original site with specific pain points highlighted"/>
+        <h2>⟡ Part III: High-Fidelity Prototyping and Final Critiques</h2>
+        <p lang="en">The Partiful team shared their style guide with us, and we began working on our high-fidelity prototypes with this in mind. We created three hi-fis with our three ideas: our basic solution, feed-based social media-esque design, and lastly a map view.
+        </p>
+        <img id="original-project-pic-1" src="./assets/iterative-hifi.png" alt="An image of the original site with specific pain points highlighted"/>
+        <p lang="en">This time, we got the opportunity to meet directly with the Partiful founders via Zoom call for a final round of critiques. The feedback they gave us was as follows:
+
+          <ul>
+          <li>Basic: The founders were receptive to this idea and felt it made Past Events more accessible. They did prompt us to consider if we want to expose all guest lists from the top level for an upcoming event, as then it would eliminate the need for users to click onto an event. They suggested a system where currently occurring events would have all the information displayed, 
+            but other upcoming events could be smaller cards. They liked having mutuals displayed on the main page, as it encourages interactions between mutuals (including sending emojis and chatting).</li>
+          <li>Feed: The founders view the activity feed as a separate page in addition to the main page, but a little too cluttered as the landing page itself. They encouraged us to take this concept and play with the hierarchy of information, and also 
+            prompted us to think about other ways to display these notifications - do we need timestamps for each card? They wanted us to explore other gestures for the iOS app and suggested visual changes like stacking user avatars, which can be clicked on or pinched to expand to see notifications. They do believe that this feed design would incentivise people to click on event cards.</li>
+          <li>Map: This proposal was received with enthusiasm, as one of the designers had previously pitched a similar idea. They would be interested in seeing how we can combine past events and upcoming events into one map, especially how we would visualize past events as a heat map. They suggested utilizing animations such as pulsing icons to draw user attention to ongoing events.</li>
+          </ul>
+          <br>
+          Overall, this project was a great experience in learning how to work with a team towards a final goal. I feel I learned so much from getting to work with and receive feedback from real-world founders and working through the steps of sketching, lo-fi wireframes, hi-fi prototyping, then receiving feedback was invaluable to the development of our design skills and ability to work with others.
+        </p>
+    
     </div>
     </div>
     <nav class="lower-bar">
