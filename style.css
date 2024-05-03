@@ -399,7 +399,7 @@ a:hover {
 
 #project-main-body {
   width: 100vw;
-  height: 80vh;
+  /* height: 80vh; */
   display: flex;
   justify-content: center;
   align-items: center;
