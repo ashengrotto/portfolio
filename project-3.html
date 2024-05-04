@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <link rel="icon" href="/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-  <meta name="theme-color" content="#e8e8ff" />
+  <meta name="theme-color" content="#e8e8ff"/>
   <title>Viviana's Portfolio</title>
   <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
   <link rel="stylesheet" href="./style.css"/>
@@ -12,7 +12,6 @@
 
 <body>
   <div id="main">
-    <a id="top"></a>
     <nav class="nav-bar">
       <h1 class="website-title"></h1>
       <ul>
@@ -36,50 +35,69 @@
       </div>
       <div class="project-body-text">
         <h3>Brief</h3>
-        <p lang="en">In this project, we worked as a team to create create a web application that allows users to track their Spotify data, including information such as their most commonly played artists, genres, songs, etc., as well as view the data of friends in a way that is akin to a social media site. The site also includes a recommender system: based on your listening data and the data of the people you follow, you will be recommended playlists and songs.</p>
+        <p lang="en">In this project, we worked as a team to create create a web application that allows users to track their 
+          Spotify data, including information such as their most commonly played artists, genres, songs, etc., as well as view 
+          the data of friends in a way that is akin to a social media site. The site also includes a recommender system: based 
+          on your listening data and the data of the people you follow, you will be recommended playlists and songs.</p>
         <h3>Problem Overview</h3>
 
         <img id="project-pic-large" src="./assets/spotify-current.png" alt="User profiles on Spotify (self and a friend's)"/>
-          <p lang="en">Spotify's existing design does not faciliate the sharing of your own top tracks and artists. Keeping this in mind, we conducted a series of user interviews with Spotify users and recorded the following information:
+          <p lang="en">Spotify's existing design does not faciliate the sharing of your own top tracks and artists. Keeping this 
+            in mind, we conducted a series of user interviews with Spotify users and recorded the following information:
             <br><br>Existing Pain Points:
             <ul>
-                <li>Your friend's listening habits on Spotify are not visible to you - in order to get data about how your friends are using the app, you usually have to wait until they share their yearly Spotify Wrapped.
+                <li>Your friend's listening habits on Spotify are not visible to you - in order to get data about how your friends
+                   are using the app, you usually have to wait until they share their yearly Spotify Wrapped.
                 </li>
-                <li>Especially as a result of the pandemic, university life can be an isolating experience for many, and connecting with new people based on music taste is an appealing concept for the users we spoke with.
+                <li>Especially as a result of the pandemic, university life can be an isolating experience for many, and connecting
+                   with new people based on music taste is an appealing concept for the users we spoke with.
                 </li>
             </ul>
             <br>
-            We also conducted a competitor analysis on existing third party applications such as Stats for Spotify and Chosic, which offer the user information about their Spotify usage. 
-            The project we propose is different from these existing applications because it involves the aspect of social media, in which friends can view each other’s data on a site. In that way, we felt our design would 
-            succeed better than existing approaches by introducing more of a community to music data, whereas other applications are localized and do not allow for the sharing of information within the site itself.
+            We also conducted a competitor analysis on existing third party applications such as Stats for Spotify and Chosic, which
+            offer the user information about their Spotify usage. The project we propose is different from these existing applications
+             because it involves the aspect of social media, in which friends can view each other’s data on a site. In that way, we 
+             felt our design would succeed better than existing approaches by introducing more of a community to music data, whereas 
+             other applications are localized and do not allow for the sharing of information within the site itself.
            <br><br>
-            From this analysis, we refined the goal of our project: to create a website that addresses the lack of community in Spotify's current design. We hope to build an application that allows users to share their top tracks and artists with their friends, view their friends' listening data, and 
-            synthesize new playlists by introducing new recommendations based on your friends' data.
+            From this analysis, we refined the goal of our project: to create a website that addresses the lack of community in 
+            Spotify's current design. We hope to build an application that allows users to share their top tracks and artists with
+            their friends, view their friends' listening data, and synthesize new playlists by introducing new recommendations based 
+            on your friends' data.
           </p>
             <h3>Intended Audience and Stakeholders</h3>
-        <p lang="en">To avoid pushing the limits of our small group, we planned to provide our application only in English at this time; this may limit our user base because Spotify is a worldwide application.
-          Even so, we felt that a great number of Spotify users would be able to use our application.
+        <p lang="en">To avoid pushing the limits of our small group, we planned to provide our application only in English at this 
+          time; this may limit our user base because Spotify is a worldwide application. Even so, we felt that a great number of 
+          Spotify users would be able to use our application.
           <br><br>
           From here, we outlined a few anticipated external stakeholder groups.
           <ul>
-            <li>Because our application would compete with other existing social media platforms, other platforms like Instagram and Tiktok may have a negative reaction to our application.</li>
-            <li>Each year, Spotify releases a “Spotify Wrapped” which aggregates and displays data on a user’s listening habits throughout the year. Our application would allow users to see some of this data without waiting for the “Spotify Wrapped” to be released by Spotify. As a result, Spotify, or other streaming services which provide similar annual releases for users to view their data, may view our application in a negative light.</li>
-            <li>Because our web application in its current stage will only support Spotify users, non-Spotify users may feel excluded from this platform.</li>
+            <li>Because our application would compete with other existing social media platforms, other platforms like Instagram 
+              and Tiktok may have a negative reaction to our application.</li>
+            <li>Each year, Spotify releases a “Spotify Wrapped” which aggregates and displays data on a user’s listening habits 
+              throughout the year. Our application would allow users to see some of this data without waiting for the “Spotify 
+              Wrapped” to be released by Spotify. As a result, Spotify, or other streaming services which provide similar annual
+               releases for users to view their data, may view our application in a negative light.</li>
+            <li>Because our web application in its current stage will only support Spotify users, non-Spotify users may feel 
+              excluded from this platform.</li>
         </ul>
         </p>
         <h3>Scope and User Stories</h3>
         <p lang="en">We proceeded to focus on the features we wanted to implement, so we defined the following user stories:
           <ul>
             <li>A user can create a personal profile by linking their Spotify account.</li>
-            <li>A user can see their Spotify listening data, including information such as most listened to songs, artists, genres, etc. </li>
+            <li>A user can see their Spotify listening data, including information such as most listened to songs, artists, 
+              genres, etc. </li>
             <li>A user can add friends by searching for their usernames.</li>
             <li>A user can see their friend's listening data.</li>
-            <li>A user can be recommended personalized playlists, songs, and artists based on their friends' listening data through a recommendation algorithm.</li>
+            <li>A user can be recommended personalized playlists, songs, and artists based on their friends' listening data 
+              through a recommendation algorithm.</li>
             <li>A user can follow said recommended artists or playlists through our app by connecting to their Spotify accounts.            </li>
         </ul>
         </p>
         <h3>Assumptions and Dependencies</h3>
-        <p lang="en">From here, we could get into the weeds of how to achieve this vision. The crux of our project relies on utilizing the Spotify API for tracking a user's listening data, as well as the following technical dependencies:<ul>
+        <p lang="en">From here, we could get into the weeds of how to achieve this vision. The crux of our project relies on 
+          utilizing the Spotify API for tracking a user's listening data, as well as the following technical dependencies:<ul>
             <li>Java 17</li>
             <li>Spark Java Framework</li>
             <li>React</li>
@@ -100,34 +118,46 @@
         <p lang="en">The specific features and pages we wanted to implement were as follows:
           <br><br>
           Backend:<ul>
-            <li>Database: Stores pertinent user information in a SQL database, which will be used to do logins, searches, and recommendations.</li>
+            <li>Database: Stores pertinent user information in a SQL database, which will be used to do logins, searches, and 
+              recommendations.</li>
             <li>Spotify API: Interfaces with Spotify in order to pull relevant data regarding listening habits of users.</li>
             <li>Recommendation System: Allows for users to get recommendations of other users with similar listening habits.</li>
-            <li>Authentication System: Allows for users to create an account for the application that will be used for subsequent logins. Also allows for users to link their accounts to Spotify for data scraping purposes.</li>
+            <li>Authentication System: Allows for users to create an account for the application that will be used for subsequent 
+              logins. Also allows for users to link their accounts to Spotify for data scraping purposes.</li>
           </ul>
           <br>Frontend:
           <br><br>
           <ul>
-            <li>Welcome Page: Serves as the welcome page for users, giving an overview of the purpose and features available in the application.</li>
+            <li>Welcome Page: Serves as the welcome page for users, giving an overview of the purpose and features available in 
+              the application.</li>
             <li>User Profile Page: Gives information about the user themself and allows them to modify their own profile.</li>
             <li>Friend Search Page: Offers the functionality to search amongst the user’s friends.</li>
           </ul>
         </p>
         <h3>Non-functional Requirements</h3>
         <p lang="en"><ul>
-            <li>Performance: Given the regularity with which people will use our application, the app must have the highest standard of performance, both in speed and reliability.</li>
-            <li>Security: Besides passwords, we are not storing any particularly sensitive information. We may use a third party service for passwords to ensure security, but we will aim for a minimum level of security for other data we are storing.            </li>
-            <li>Privacy: In contrast to other social media apps, our application aims to prioritize the privacy of our users, so we’ll aim for the highest standard of privacy, with particular attention to obfuscating some data from developers so that only users themselves have access to them.</li>
-            <li>UI: We want to have a clean and non-distracting UI, so we will focus on effective and practical design over highly flashy and attractive looks.</li>
+            <li>Performance: Given the regularity with which people will use our application, the app must have the highest standard 
+              of performance, both in speed and reliability.</li>
+            <li>Security: Besides passwords, we are not storing any particularly sensitive information. We may use a third party 
+              service for passwords to ensure security, but we will aim for a minimum level of security for other data we are storing.            </li>
+            <li>Privacy: In contrast to other social media apps, our application aims to prioritize the privacy of our users, so we’ll 
+              aim for the highest standard of privacy, with particular attention to obfuscating some data from developers so that only 
+              users themselves have access to them.</li>
+            <li>UI: We want to have a clean and non-distracting UI, so we will focus on effective and practical design over highly 
+              flashy and attractive looks.</li>
           </ul>
         </p>
         <h3>Final Implementation</h3>
-        <p lang="en">Keeping this all in mind, we began coding our site. Within the team, I mainly handled design of the UI and integrating the front-end and back-end. 
-
-          <br><br>In the end, we were able to build and deploy our site, complete with a recommendation algorithm, integration with Spotify's API to extract user data, and friends list system. The code is currently set to private as it was a class project, but feel free to reach out if you would like to see the repository!
+        <p lang="en">Keeping this all in mind, we began coding our site. Within the team, I was solely responsible for the design 
+          of the UI; I also assisted in integrating the front-end and back-end and worked on the overall layout and organization 
+          of the various pages (profile, friends list, etc.). 
+          <br><br>In the end, we were able to build and deploy our site, complete with a recommendation algorithm, integration 
+          with Spotify's API to extract user data, and friends list system. The code is currently set to private as it was a 
+          class project, but feel free to reach out if you would like to see the repository!
       </p>
     </div>
     </div>
+
     <nav class="lower-bar">
       <h1 class="website-title">Contact Me</h1>
       <div id="contact-logos">
