@@ -2,6 +2,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 	border-color: transparent;
+  cursor: crosshair;
 }
 
 body {
@@ -10,7 +11,6 @@ body {
   overflow-x: hidden;
   font-family: 'Playfair Display', serif;
   background-color: #fffffe !important;
-  cursor: crosshair;
 }
 
 #main {
