@@ -18,4 +18,3 @@ aboutPic.addEventListener('mouseenter', function() {
       break;
   }
 });
-

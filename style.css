@@ -10,6 +10,7 @@ body {
   overflow-x: hidden;
   font-family: 'Playfair Display', serif;
   background-color: #fffffe !important;
+  cursor: crosshair;
 }
 
 #main {
@@ -140,7 +141,6 @@ li a:hover {
     transform: scale(0.9);
   }
 }
-
 
 .welcome-msg {
   display: flex;
