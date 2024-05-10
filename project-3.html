@@ -35,55 +35,56 @@
       </div>
       <div class="project-body-text">
         <h3>Brief</h3>
-        <p lang="en">In this project, we worked as a team to create create a web application that allows users to track their 
+        <p lang="en">In this project, we worked as a team to create a web application that allows users to track their 
           Spotify data, including information such as their most commonly played artists, genres, songs, etc., as well as view 
-          the data of friends in a way that is akin to a social media site. The site also includes a recommender system: based 
-          on your listening data and the data of the people you follow, you will be recommended playlists and songs.</p>
+          the data of friends (akin to a social media site.) We also wanted the site to include a recommender system: based 
+          on your listening data and the data of the people you follow, the user will be recommended artists and songs that they 
+          may not have been familiar with before.</p>
         <h3>Problem Overview</h3>
-
         <img id="project-pic-large" src="./assets/spotify-current.png" alt="User profiles on Spotify (self and a friend's)"/>
-          <p lang="en">Spotify's existing design does not faciliate the sharing of your own top tracks and artists. Keeping this 
-            in mind, we conducted a series of user interviews with Spotify users and recorded the following information:
+          <p lang="en">From personal experience, we already knew that Spotify's existing design does not faciliate the 
+            sharing of your own top tracks and artists. Keeping this in mind, we conducted a series of user interviews 
+            with Spotify users and recorded the following information:
             <br><br>Existing Pain Points:
             <ul>
                 <li>Your friend's listening habits on Spotify are not visible to you - in order to get data about how your friends
-                   are using the app, you usually have to wait until they share their yearly Spotify Wrapped.
+                   are using the app, you usually have to wait until they share their yearly "Spotify Wrapped.""
                 </li>
                 <li>Especially as a result of the pandemic, university life can be an isolating experience for many, and connecting
-                   with new people based on music taste is an appealing concept for the users we spoke with.
+                   with new people based on music taste is an appealing concept for the people we spoke with.
                 </li>
             </ul>
             <br>
             We also conducted a competitor analysis on existing third party applications such as Stats for Spotify and Chosic, which
-            offer the user information about their Spotify usage. The project we propose is different from these existing applications
-             because it involves the aspect of social media, in which friends can view each other’s data on a site. In that way, we 
-             felt our design would succeed better than existing approaches by introducing more of a community to music data, whereas 
-             other applications are localized and do not allow for the sharing of information within the site itself.
+            offer the user information about their Spotify usage as third-party sites. The project we propose is different from these 
+            existing applications because it involves the aspect of social media, in which friends can view each other’s data on a site. 
+            In that way, we felt our design would succeed better than these existing approaches by introducing more of a community to 
+            music data, whereas other applications are localized and do not allow for the sharing of information within the site itself.
            <br><br>
             From this analysis, we refined the goal of our project: to create a website that addresses the lack of community in 
-            Spotify's current design. We hope to build an application that allows users to share their top tracks and artists with
+            Spotify's current design. We hoped to build an application that allows users to share their top tracks and artists with
             their friends, view their friends' listening data, and synthesize new playlists by introducing new recommendations based 
-            on your friends' data.
+            on friends' data.
           </p>
             <h3>Intended Audience and Stakeholders</h3>
-        <p lang="en">To avoid pushing the limits of our small group, we planned to provide our application only in English at this 
-          time; this may limit our user base because Spotify is a worldwide application. Even so, we felt that a great number of 
-          Spotify users would be able to use our application.
+        <p lang="en">To avoid pushing the limits of our small group, we planned to provide our application only in English; we 
+          acknowledged that this may limit our user base because Spotify is a worldwide application. Even so, we felt that a great 
+          number of Spotify users would be able to use our application.
           <br><br>
           From here, we outlined a few anticipated external stakeholder groups.
           <ul>
             <li>Because our application would compete with other existing social media platforms, other platforms like Instagram 
               and Tiktok may have a negative reaction to our application.</li>
-            <li>Each year, Spotify releases a “Spotify Wrapped” which aggregates and displays data on a user’s listening habits 
-              throughout the year. Our application would allow users to see some of this data without waiting for the “Spotify 
-              Wrapped” to be released by Spotify. As a result, Spotify, or other streaming services which provide similar annual
+            <li>Each year, Spotify releases a "Spotify Wrapped" which aggregates and displays data on a user’s listening habits 
+              throughout the year. Our application would allow users to see some of this data without waiting for the "Spotify 
+              Wrapped" to be released. As a result, Spotify, or other streaming services which provide similar annual
                releases for users to view their data, may view our application in a negative light.</li>
             <li>Because our web application in its current stage will only support Spotify users, non-Spotify users may feel 
               excluded from this platform.</li>
         </ul>
         </p>
         <h3>Scope and User Stories</h3>
-        <p lang="en">We proceeded to focus on the features we wanted to implement, so we defined the following user stories:
+        <p lang="en">We proceeded to focus on the specific features we wanted to implement, so we defined the following user stories:
           <ul>
             <li>A user can create a personal profile by linking their Spotify account.</li>
             <li>A user can see their Spotify listening data, including information such as most listened to songs, artists, 
@@ -117,7 +118,7 @@
         <p lang="en">The specific features and pages we wanted to implement were as follows:
           <br><br>
           Backend:<ul>
-            <li>Database: Stores pertinent user information in a SQL database, which will be used to do logins, searches, and 
+            <li>Database: Stores pertinent user information in a SQL database, which will be used to handle logins, searches, and 
               recommendations.</li>
             <li>Spotify API: Interfaces with Spotify in order to pull relevant data regarding listening habits of users.</li>
             <li>Recommendation System: Allows for users to get recommendations of other users with similar listening habits.</li>
@@ -148,10 +149,11 @@
         <h3>Final Implementation</h3>
         <p lang="en">Keeping this all in mind, we began coding our site. Within the team, I was solely responsible for the design 
           of the UI; I also assisted in integrating the frontend and backend code and worked on the overall layout and organization 
-          of the various pages (profile, friends list, etc.). 
+          of the various pages (profile, friends list, etc.). This experience was invaluable for the development of both my frontend and 
+          backend programming skills, and I also learned a lot about user interface design. 
           <br><br>In the end, we were able to build and deploy our site, complete with a recommendation algorithm, integration 
           with Spotify's API to extract user data, and friends list system. The code is currently set to private as it was a 
-          class project, but feel free to reach out if you would like to see the repository!
+          final project for a course, but feel free to reach out if you would like to see the repository!
       </p>
     </div>
   </div>
