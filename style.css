@@ -52,6 +52,22 @@ body {
   font-weight: bold;
 }
 
+.dropdown {
+  position: absolute;
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#mobile-nav {
+  display: none;
+}
+
 .lower-bar {
   width: 100vw;
   display: flex;
@@ -455,4 +471,75 @@ a:hover {
 .style-desc {
   max-width: 30vw;
   color: #26180b;
+}
+
+@media screen and (max-width: 650px) {
+  .website-title {
+    font-size: 1rem;
+    color: #26180b;
+    margin-left: 2rem;
+  }
+
+  .welcome-msg {
+    display: flex;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #26180b;
+    white-space: wrap;
+    align-self: center;
+    flex-shrink: 0;
+  }
+    
+  .intro-text {
+    display: flex;
+    max-width: 50vw;
+    text-align: center;
+    align-self: center;
+    font-size: 0.6rem;
+    color: #26180b;
+    flex-direction: column;
+  }
+
+  .rounded-box {
+    max-width: 80vw;
+    border: 8px dotted #ed80a8; 
+    padding: 0.25rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: fadeIn 1s ease forwards;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  ul {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-self: center;
+  }
+
+  .dropdown {
+    position: absolute;
+    display: none;
+  }
+
+  ul li:hover ul.dropdown {
+    display: block; 
+    text-decoration: none;
+    background-color: #e8e8ff;
+    text-align: center;
+  }
+
+  .nav-bar li a {
+    display: block;
+    font-size: 0.6rem;
+    color: #d33967;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+  }
 }
